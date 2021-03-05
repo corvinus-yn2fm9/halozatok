@@ -30,7 +30,7 @@ namespace HajosTeszt
             app.UseHttpsRedirection();
             DefaultFilesOptions options = new DefaultFilesOptions();
             options.DefaultFileNames.Clear();
-            options.DefaultFileNames.Add("cv.html");
+            options.DefaultFileNames.Add("cv2.html");
             app.UseDefaultFiles(options);
             app.UseStaticFiles(); //A sorrend fontos!
 
