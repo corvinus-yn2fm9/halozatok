@@ -1,16 +1,20 @@
-﻿window.onload = () => {
+﻿window.onload = () =>
+{
     console.log("betöltődött")
 
-    var faktoriális = function (n) {
+    var faktoriális = function (n)
+    {
         let er = 1;
-        for (let i = 2; i <= n; i++) {
+        for (let i = 2; i <= n; i++)
+        {
             er = er * i;
         }
         return er;
     }
 
     let hova = document.getElementById("ide");
-    for (var s = 0; s < 10; s++) {
+    for (var s = 0; s < 10; s++)
+    {
 
         let sor = document.createElement("div");
         sor.classList.add("sor")

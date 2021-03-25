@@ -30,7 +30,7 @@ namespace HajosTeszt
             app.UseHttpsRedirection();
             DefaultFilesOptions options = new DefaultFilesOptions();
             options.DefaultFileNames.Clear();
-            options.DefaultFileNames.Add("jsgyak.html");
+            options.DefaultFileNames.Add("hajo.html");
             app.UseDefaultFiles(options);
             app.UseStaticFiles(); //A sorrend fontos!
 
