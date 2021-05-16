@@ -29,17 +29,17 @@ document.addEventListener("DOMContentLoaded", () => {
     if (localStorage.getItem("hotList")) {
         hotList = JSON.parse(localStorage.getItem("hotList"));
     }
-
+  
     if (localStorage.getItem("displayedQuestion")) {
         displayedQuestion = parseInt(localStorage.getItem("displayedQuestion"))
     }
-
+  
     if (localStorage.getItem("nextQuestion")) {
         nextQuestion = parseInt(localStorage.getItem("nextQuestion"))
     }
 
     //Első kérdések letöltése
-    if ("hotList".length === 0) {
+    if (!localStorage.getitem("hotList")) {
         for (let i = 0; i < questionsInHotList; i++) {
             kérdésBetöltés(nextQuestion, i);
             nextQuestion++;
